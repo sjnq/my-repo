@@ -34,37 +34,23 @@ for message in res:
 
 #
 """
-def fun(n) :
-    if n == 5 :
+def fun(n):
+    if n == 5:
         return
-    
     print(1, n)
     fun(n+1)
-    #print(2, n)
-    
 fun(1)
 
 """
 # factorial
-def ploop(n) :
-    if n == 0 :
+def ploop(n):
+    if n == 0:
         print("end")
         return 1
-    else : 
+    else:
         print(n, n-1, " = ", n + n-1)
         return n * ploop(n-1)
-
-print(ploop(4))
-# factorial
-def ploop(n) :
-    if n == 0 :
-        print("end")
-        return 1
-    else : 
-        print(n)
-        return n + ploop(n-1)
-            # 4 = (3 * 2* 1 )
-print(ploop(4))
+print(ploop(5))
 
 
 
@@ -83,88 +69,80 @@ def fibonacci(n) :
 res = fibonacci(4)
 print("res = ", res)
 """
-"""
-def add(a, b):
-    print("a + b : ", a + b)
-    return a + b
-def sub(a, b):
-    print("a - b : ", a - b)
-    return a - b
-def mul(a, b):
-    print("a * b : ", a * b)
-    return a * b
 
-def div(a, b):
-    print("a / b : ", a / b)
-    return a / b
- 
+#모듈
+
+""" import calc
+print(dir(calc))
 """
 
-# calc모듈 호출
-"""
+""" 
 import calc
-
-# res = calc.add(8, 4)
-# print(res)
-
-print(calc.add(8, 4))
-print(calc.sub(8, 4))
-print(calc.mul(8, 4))
-print(calc.div(8, 4))
+print(calc.add(3, 6))
+print(calc.sub(3, 6))
+print(calc.mul(3, 6))
+print(calc.div(3, 6)) 
 """
 
-##########
 
+""" 
+import calc as cl
+print(cl.add(5, 7))
+
+"""
+
+#circle mod
+""" 
 import mod.circle_mod as cm
-
 print(cm.pi)
+print(cm.cc_len(4))
+print(cm.cc_area(4)) 
+"""
 
-print(cm.cc_area(4))
-print(cm.cc_len(5))
+#문자열 자르기
+""" 
+def cutword(st, wd, idx):
+tmp = st.split(wd)
+res = tmp[idx]
+return res
 
-
-######
-
-def cutstr(st, wd, idx):
-     tmp = st.split(wd)
-     res = tmp[idx]
-     return res
- 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
-rs = cutstr(url,"/", 3)
+rs = cutword(url, "/", 3)
 print(rs)
+"""
 
-#######
-import mod.str_util as mod
-
+#문자유틸 모듈화
+"""
+import mod.str_util as smod
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
-res = mod.cutstr(url, "/", 3)
-print(res)
+rs = smod.cutword(url, "/", 3)
+print(rs) 
+"""
 
-####
+#math 모듈
+""" 
 import math
 
 sq_res = math.sqrt(6)
-print(sq_res)
+#print(sq_res)
 
-sp_res = math.sin(math.pi /2)
-print(sp_res)
+sp_res = math.sin(math.pi / 2)
+#print(sp_res)
 
 e_res = math.log(math.e)
-print(e_res)
+#print(e_res)
 
 exp_res = math.exp(3)
-print(exp_res)
+#print(exp_res)
 
 pi_res = math.pi
-print(pi_res)
+#print(pi_res)
 
 fc_res = math.factorial(4)
-print(fc_res)
+print(fc_res) 
+"""
 
-
-
-###
+""" 
 import mod.utils as mu
 
 res = mu.mt_sqrt(7)
@@ -180,10 +158,11 @@ ep = mu.mt_exp(3)
 print(ep)
 
 pi = mu.mt_pi()
-print(pi)
+print(pi) 
+"""
 
-######
-import math
+#random 모듈
+
 import random as rd
 
 res = rd.randint(1, 100)
@@ -196,4 +175,67 @@ print(lres)
 fres = rd.random()
 print(fres)
 
+nvres = rd.normalvariate()
+print(nvres)
+
+
+import mod.utils as mu
+
+my_list = ["apple", "banana", "cherry"]
+
+print(mu.rd_int(1, 100))
+print(mu.rd_list(my_list))
+print(mu.rd_rd())
+print(mu.rd_nmvar())
+
+
+#  os 
+
+import os
+
+#현재 
+print(os.grtcwd())
+
+#더력로리
+os.chdir('../')
+
+#
+print(os.getcwd())
+
+#
+print(os.getcwd())
+#
+print(os.listdir())
+#더력로리 삭재
+os.rmdir('new_directory')
+print(os.listdir())
+#더력로리
+os.mkdir('new_directory')
+print(os.listdir())
+
+"""
+
+import mod.utils as mu
+import os
+print(mu.get_curdir())
+
+pname = "python"
+mu.os_mkdir(pname)
+print(os.listdir())
+
+os.rmdir(pname)
+print(os.listdir())
+
+
+"""
+
+
+import sys
+print(sys.version)
+print(sys.argv)
+
+#==========================
+    
+    
+#stack
 
