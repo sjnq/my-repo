@@ -210,8 +210,6 @@ print("나누기 :", div(a, b))
 #
 def sum_num(num):
     return sum(num)
-
-
 nums = []
 
 for i in range(1, 6):
