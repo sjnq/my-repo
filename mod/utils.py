@@ -1,20 +1,37 @@
 import math
+import random
 
-sq_res = math.sqrt(6)
-print(sq_res)
+""" def mt_sqrt(x) :
+    return math.sqrt(x)
 
-sp_res = math.sin(math.pi /2)
-print(sp_res)
+def mt_sinpi(x) :
+    return math.sin(math. x)
 
-e_res = math.log(math.e)
-print(e_res)
+def mt_elog(x) :
+    return math.log(math. x)
 
-exp_res = math.exp(3)
-print(exp_res)
+def mt_exp(X) :
+    return math.exp()
 
-pi_res = math.pi
-print(pi_res)
+def mt_pi(x) :
+    return math.pi """
+    
+import random as rd    
+    
+def rd_int(x, y) :
+    return rd.randint(x, y)
 
-fc_res = math.factorial(4)
-print(fc_res)
+def rd_list(this) :
+    return rd.choice(this)
 
+def rd_rd() :
+    return random.random()
+
+def rd_nmvar() :
+    return random.normalvariate(0,1 )
+
+fres = rd.random()
+print(fres)
+
+nvres = rd.normalvariate()
+print(nvres)

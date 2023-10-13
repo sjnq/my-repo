@@ -115,7 +115,7 @@ print(cl.mul(3, 3))
 div_res = cl.div(6, 3)
 print(cl.div(6, 3))
 
-# 수정확인
+# 
 add_res = cl.add()
  """# circle mod
 
@@ -136,7 +136,7 @@ url ="https://www.notion.so/test/4-1/a1fe5ef0df1/41/fdfdfd"
 rs = cutstr(url, "/", 3)
 print(rs) """
 
-"""#math 모듈
+"""#math 
 mport math
 sq_res = math.sqrt(5)
 print(sq_res)
@@ -158,7 +158,7 @@ print(pi_res)
 fac_res = math.factorial(2)
 print(fac_res)
 """
-""" import mod.utils as mu
+import mod.utils as mu
 
 res = mu.mt_sqrt(7)
 print(res)
@@ -173,9 +173,9 @@ ep = mu.mt_exp(3)
 print(ep)
 
 pi = mu.mt_pi()
-print(pi) """
+print(pi) 
 
-""" import random as rd
+import random as rd
 
 res = rd.randint(1, 180)
 print(res)
@@ -188,5 +188,5 @@ fres = rd.random()
 print(fres)
 
 nvres = rd.normalvariate()
-print(nvres)"""
+print(nvres)
  
