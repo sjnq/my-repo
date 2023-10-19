@@ -18,9 +18,9 @@ for i in range(1, 6):
 #4번
 """
 for i in range(6, 0, -1):
-    sqaces = " " * (6 - i)
+    spaces = " " * (6 - i)
     stars = "*" * (2 * i - 1)
-    print(sqaces + stars)
+    print(spaces + stars)
 """
 
 
@@ -39,7 +39,7 @@ for i in range(5):
     print(line)
     line = []
         
-my_list = [1]
+
 """
 
 # 세로출력
@@ -63,7 +63,6 @@ for i in range(5):
     print(line)
     line = []
     
-my_list = [1]
 
 """
 
@@ -85,7 +84,7 @@ def determine_winner(user_choice):
         return
     elif(
         (user_choice == '1' and pcnum == '3') or
-        (user_choice == '2' and pcnum == '1')
+        (user_choice == '2' and pcnum == '1') or
         (user_choice == '3' and pcnum == '2')
         
     ):
